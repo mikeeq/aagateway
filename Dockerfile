@@ -28,10 +28,6 @@ RUN curl -L $(curl -sL https://developer.android.com/studio/index.html\#command-
     && mv tools cmdline-tools/ \
     && yes | sdkmanager --licenses
 
-# ENV ANDROID_SDK_ROOT=/usr/lib/android-sdk
-
-# curl https://developer.android.com/studio/index.html\#command-tools -sL | grep "linux.tar.gz" | grep "a href" | cut -d'"' -f2
-
 # ENV GRADLE_OPTS=-Djava.io.tmpdir=/repo/
 # export GRADLE_OPTS=-Djava.io.tmpdir=/repo/
 
